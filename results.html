@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carbon Emissions Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <header class="results-header">
+    <h1>📄 Carbon Emissions Report</h1>
+    <p>Here is your personalized travel summary. Use print or download to keep a copy of the estimate.</p>
+  </header>
+
+  <section class="report-card">
+    <div class="report-row">
+      <span>Vehicle type</span>
+      <strong id="reportVehicle">—</strong>
+    </div>
+    <div class="report-row">
+      <span>Distance traveled</span>
+      <strong id="reportDistance">—</strong>
+    </div>
+    <div class="report-row">
+      <span>Estimated CO₂ emissions</span>
+      <strong id="reportEmissions">—</strong>
+    </div>
+    <div class="report-row">
+      <span>Report generated</span>
+      <strong id="reportDate">—</strong>
+    </div>
+  </section>
+
+  <div class="controls">
+    <button id="backButton" type="button">⟵ Back</button>
+    <button id="printButton" type="button">Print Summary</button>
+    <button id="downloadButton" type="button">Download Report</button>
+  </div>
+
+  <div class="note-box">
+    <strong>Important:</strong>
+    This estimate is based on average CO₂ intensity values for the selected vehicle type.
+    Choosing cleaner transport modes or reducing distance can significantly lower your footprint.
+    Save or print this report for reference whenever you plan a trip.
+  </div>
+</div>
+<script src="results.js"></script>
+</body>
+</html>
